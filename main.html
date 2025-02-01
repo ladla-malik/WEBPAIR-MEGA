@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("https://i.ibb.co/YdSKMhv/6767.jpg"); /* Set the background image */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .btn {
+      --color: White;
+      --color2: rgb(10, 25, 30);
+      width: 200px; /* Set a fixed width for the buttons */
+      padding: 0.8em 1.75em;
+      background-color: transparent;
+      border-radius: 6px;
+      border: .3px solid var(--color);
+      transition: .5s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      z-index: 1;
+      font-weight: 900;
+      font-size: 19px;
+      font-family: 'Roboto', 'Segoe UI', sans-serif;
+      text-transform: uppercase;
+      color: var(--color);
+      margin-bottom: 10px; /* Add margin to separate buttons */
+    }
+
+    .btn::after, .btn::before {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      transform: skew(90deg) translate(-50%, -50%);
+      position: absolute;
+      inset: 50%;
+      left: 25%;
+      z-index: -1;
+      transition: .5s ease-out;
+      background-color: var(--color);
+    }
+
+    .btn::before {
+      top: -50%;
+      left: -25%;
+      transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+    }
+
+    .btn:hover::before {
+      transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+    }
+
+    .btn:hover::after {
+      transform: skew(45deg) translate(-50%, -50%);
+    }
+
+    .btn:hover {
+      color: var(--color2);
+    }
+
+    .btn:active {
+      filter: brightness(.7);
+      transform: scale(.98);
+    }
+  </style>
+</head>
+<body>
+<body><marquee style="color:white;background-color:royal;height:75px;">
+ 
+  HELLO 👋🏻 WELCOME TO SHEIKH ALI WEBSITE 💫</marquee>
+<button onclick="window.open(`/pair`)" class="btn">pair code</button>
+<button onclick="window.open(`https://dashboard.heroku.com/new?template=https://github.com/Sheikh-ali-2412/SHEIKH-ALI-MD`)" class="btn">Deploy</button>
+<button onclick="window.open('https://github.com/Sheikh-ali-2412/SHEIKH-ALI-MD')" class="btn">Bot Repo</button>
+<button onclick="window.open(`https://wa.me/923143702270`)" class="btn">Developer</button>
+<button onclick="window.open(`https://www.instagram.com/sheikh_ali_2424?igsh=MW4wbWN1ejFsODJyag==`)" class="btn">Instagram</button>
+<button onclick="window.open(`https://www.facebook.com/share/15oHg1oLXk/`)" class="btn">Facebook</button>
+<button onclick="window.open(`https://chat.whatsapp.com/BobH0xeN4YQ6QAMELpk4i0`)" class="btn">Wa Group</button>
+<button onclick="window.open(`https://whatsapp.com/channel/0029Vao1lnR1nozDF8jBNh3B`)" class="btn">Wa Channel</button>
+<button onclick="window.open(`https://youtube.com/@SHEIKH-ALI-2412`)" class="btn">YouTube</button>
+<button onclick="window.open(`https://www.tiktok.com/@sheikh_ali_2412`)" class="btn">TikTok</button>
+<button onclick="window.open(`https://t.me/Sheikh_ali_ahmad_24`)" class="btn">Telegram</button>
+
+</body>
+</html>
